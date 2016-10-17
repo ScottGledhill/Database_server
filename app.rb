@@ -7,11 +7,7 @@ class DatabaseServer < Sinatra::Base
   end
 
   get '/get' do
-    extract_key
-  end
-
-  def extract_key
-    @key = params[:key]
+    DataStore.extract_key(params)
   end
 
   run! if app_file == $0

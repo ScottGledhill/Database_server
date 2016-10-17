@@ -7,4 +7,8 @@ attr_reader :key, :value
     @value = params.last
     @key = params.first
   end
+
+  def extract_key(params)
+    @key = params['key']
+  end
 end
