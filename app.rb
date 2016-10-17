@@ -1,8 +1,9 @@
 require 'sinatra/base'
+require_relative 'lib/data_store'
 
 class DatabaseServer < Sinatra::Base
   get '/set' do
-    @params = params
+    DataStore.save_params(params)
   end
 
   get '/get' do
@@ -10,7 +11,7 @@ class DatabaseServer < Sinatra::Base
   end
 
   def extract_key
-    p @key = params[:key]
+    @key = params[:key]
   end
 
   run! if app_file == $0

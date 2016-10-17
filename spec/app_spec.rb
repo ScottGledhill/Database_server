@@ -7,6 +7,7 @@ describe 'DatabaseServer' do
     visit('/set?key=value')
     expect(page).to have_content(["key", "value"])
   end
+  
   it 'can extract key' do
     visit('/get?key=mykey')
     expect(page).to have_content('mykey')
