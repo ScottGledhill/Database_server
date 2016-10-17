@@ -1,8 +1,9 @@
 require 'sinatra/base'
 
 class DatabaseServer < Sinatra::Base
-  get '/' do
-    'Hello DatabaseServer!'
+  get '/set' do
+    @params = params
+    p @key = params[:key]
   end
 
   run! if app_file == $0
