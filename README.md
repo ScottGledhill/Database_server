@@ -6,3 +6,21 @@
 >
 During your [mock] interview, you will pair on saving the data to a file."
 >
+
+# Run it 
+
+[download](https://www.ruby-lang.org/en/downloads/) and install ruby if you don't already have it installed.
+
+Clone repo from git@github.com:ScottGledhill/Database_server.git
+
+Enter project file;
+
+Run Rspec to see tests
+
+Run ruby app.rb to start the server
+
+Visit [localhost](http://localhost:4000/set?key=value)
+
+Change key and value to display whichever words you would like
+
+[Scott Gledhill](https://github.com/ScottGledhill)
