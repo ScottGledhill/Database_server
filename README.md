@@ -9,7 +9,7 @@ During your [mock] interview, you will pair on saving the data to a file."
 
 # Run it 
 
-[download](https://www.ruby-lang.org/en/downloads/) and install ruby if you don't already have it installed.
+[Download](https://www.ruby-lang.org/en/downloads/) and install ruby if you don't already have it installed.
 
 Clone repo from git@github.com:ScottGledhill/Database_server.git
 
